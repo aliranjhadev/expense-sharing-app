@@ -3,10 +3,12 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #555; 
+  background-color: #555;
   color: #fff;
   padding: 15px;
   display: flex;
@@ -19,7 +21,7 @@ nav {
 }
 
 nav a {
-  color: #6200ff; 
+  color: #6200ff;
   text-decoration: none;
   margin: 0 10px;
   padding: 10px 15px;
@@ -34,12 +36,11 @@ nav a:hover {
 
 section {
   margin: 20px;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 100%; /* Adjusted max-width for responsiveness */
 }
 
 section h2 {
-  color: #ff8c00; 
+  color: #ff8c00;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -49,15 +50,15 @@ form {
   padding: 20px;
   border-radius: 8px;
   transition: border-color 0.3s;
-  animation: borderAnimation 1s infinite alternate; 
+  animation: borderAnimation 1s infinite alternate;
 }
 
 @keyframes borderAnimation {
   from {
-      border-color: #ddd;
+    border-color: #ddd;
   }
   to {
-      border-color: #4CAF50;
+    border-color: #4CAF50;
   }
 }
 
@@ -81,7 +82,7 @@ input:focus {
 }
 
 button {
-  background-color: #4CAF50; 
+  background-color: #4CAF50;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -91,9 +92,9 @@ button {
 }
 
 button:hover {
-  background-color: #45a049; 
+  background-color: #45a049;
   color: #fff;
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
 p {
@@ -102,7 +103,7 @@ p {
 }
 
 a {
-  color: #4CAF50; 
+  color: #4CAF50;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -157,59 +158,37 @@ footer {
   text-decoration: underline;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .bottom-details {
   background-color: #333;
-  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 10px; 
+  padding: 10px;
   text-align: center;
 }
 
 .copyright_text {
-  font-size: 20px; 
-  position: center;
+  font-size: 20px;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 10px; 
+  padding: 10px;
   text-align: center;
-  background-color: #3333; 
+  background-color: #3333;
 }
+
 .policy_terms a {
-  margin: 0 10px; 
+  margin: 0 10px;
   text-decoration: none;
-  color: #333; 
+  color: #333;
 }
 
 .policy_terms a:hover {
   text-decoration: underline;
 }
 
-@media (max-height: 600px) {
-  .bottom-details {
-    position: static;
+@media (max-width: 768px) {
+  section {
+    max-width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
